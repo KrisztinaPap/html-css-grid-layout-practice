@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo { 
+    background-color: blue;
+    grid-area: logo; 
+}
+#nav { 
+    background-color: red;
+    grid-area: nav; 
+}
+#syn { 
+    background-color: green; 
+    grid-area: syn;
+}
+#toc { 
+    background-color: yellow; 
+    grid-area: toc;
+}
+#ch1 { 
+    background-color: orange; 
+    grid-area: ch1;
+}
+#ch2 { 
+    background-color: purple; 
+    grid-area: ch2;
+}
+#ch3 { 
+    background-color: brown; 
+    grid-area: ch3;
+}
+#ad { 
+    background-color: teal; 
+    grid-area: ad;
+}
+#reviews { 
+    background-color: whitesmoke; 
+    grid-area: reviews;
+}
+#author { 
+    background-color: blueviolet; 
+    grid-area: author;
+}
+#stats { 
+    background-color: gold; 
+    grid-area: stats;
+}
+#links { 
+    background-color: fuchsia; 
+    grid-area: links;
+}
+#footer { 
+    background-color: lightcoral; 
+    grid-area: footer;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 
+        100px /* logo | nav */
+        200px /* toc */
+        250px /* syn */
+        200px /* ch1 */
+        200px /* ch2 */
+        200px /* ch3 */
+        250px /* ad */
+        200px /* reviews */
+        200px /* author | stats */
+        100px /* links */
+        100px /* footer */;
+    grid-template-areas: 
+        "logo logo nav"
+        "toc toc toc"
+        "syn syn syn"
+        "ch1 ch1 ch1"
+        "ch2 ch2 ch2"
+        "ch3 ch3 ch3"
+        "ad ad ad"
+        "reviews reviews reviews"
+        "author stats stats"
+        "links links links"
+        "footer footer footer";
+}
