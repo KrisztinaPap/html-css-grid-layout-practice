@@ -85,3 +85,27 @@ body {
         "links links links"
         "footer footer footer";
 }
+
+@media screen and ( min-width: 600px ) {
+    body {
+        grid-template-columns: calc( 100% / 3 ) calc( 100% / 3 ) calc( 100% / 3 );
+        grid-template-rows: 
+            100px /* logo | nav */
+            200px /* toc | syn */
+            200px /* toc | author | stats */
+            200px /* toc | ch1 */
+            100px /* reviews | ch1 */
+            300px /* reviews | ch2 */
+            300px /* reviews | ch3 */
+            200px /* ad | links | footer */;
+        grid-template-areas: 
+            "logo nav nav"
+            "toc syn syn"
+            "toc author stats"
+            "toc ch1 ch1"
+            "reviews ch1 ch1"
+            "reviews ch2 ch2"
+            "reviews ch3 ch3"
+            "ad links footer";
+    }
+}
