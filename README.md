@@ -13,6 +13,7 @@ Krisztina Pap
 August 20, 2020
 
 ## Resources
+[CSS-Tricks: A complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 ## Trello Project Board
 https://trello.com/b/FQPXJEfJ/html-css-grid-layout-practice

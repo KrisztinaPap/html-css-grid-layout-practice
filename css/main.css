@@ -109,3 +109,25 @@ body {
             "ad links footer";
     }
 }
+
+@media screen and ( min-width: 900px ) {
+    body {
+        grid-template-columns: 25% 15% 20% 10% 10% 20%;
+        grid-template-rows: 
+            150px /* logo | nav */
+            300px /* toc | author | syn |stats */
+            250px /* toc | ch1 */
+            50px /* reviews | ch1 */
+            300px /* reviews | ch2 */
+            300px /* reviews | ch3 */
+            350px /* ad | links | footer */;
+        grid-template-areas: 
+            "logo nav nav nav nav nav"
+            "toc toc author syn syn stats"
+            "toc toc ch1 ch1 ch1 ch1"
+            "reviews reviews ch1 ch1 ch1 ch1"
+            "reviews reviews ch2 ch2 ch2 ch2"
+            "reviews reviews ch3 ch3 ch3 ch3"
+            "ad ad links links footer footer";
+    }
+}
